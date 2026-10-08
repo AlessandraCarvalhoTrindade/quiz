@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz | Alessandra</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div id="tela-inicial">
+      <h1>Quiz de Conhecimentos</h1>
+      <p>Teste seus conhecimentos gerais</p>
+      <button onclick="iniciarQuiz()">Começar</button>
+    </div>
+
+    <div id="tela-quiz" class="escondido">
+      <div class="cabecalho">
+        <span id="contador">Pergunta 1 de 5</span>
+        <span id="pontuacao">Pontos: 0</span>
+      </div>
+      <h2 id="pergunta"></h2>
+      <div id="opcoes" class="opcoes"></div>
+    </div>
+
+    <div id="tela-final" class="escondido">
+      <h1>Quiz Finalizado!</h1>
+      <p id="resultado-final"></p>
+      <button onclick="reiniciar()">Jogar novamente</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
